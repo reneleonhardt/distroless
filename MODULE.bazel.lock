@@ -580,6 +580,238 @@
         "recordedRepoMappingEntries": []
       }
     },
+    "//private/extensions:python.bzl%python": {
+      "general": {
+        "bzlTransitiveDigest": "g014w8o9+pUqu6qFxDnII7LhAYtPkQ608MrOQvrvyN0=",
+        "usagesDigest": "tG689EIwVPWG0ZSvYu3XHygIO8sACWdZ24C/r1Ck6Ng=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "python313_amd64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "7253808c3413d9ebd03e76b3853c895b9287f12e0750a30fce1cbf430e516113",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15+20260807-x86_64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.13.15+20260807",
+              "python_version": "3.13",
+              "architecture": "amd64",
+              "control": "@@//python:control"
+            }
+          },
+          "python313_arm64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "68159637492dcf3501c0967b69e07665c3dda070fb42231737055f72963f66fc",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15+20260807-aarch64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.13.15+20260807",
+              "python_version": "3.13",
+              "architecture": "arm64",
+              "control": "@@//python:control"
+            }
+          },
+          "python313_s390x": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "c89a3a44650c5f7712e003b2482cddcbed9ed54a56139efd04fc444a5a45722d",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15+20260807-s390x-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.13.15+20260807",
+              "python_version": "3.13",
+              "architecture": "s390x",
+              "control": "@@//python:control"
+            }
+          },
+          "python313_riscv64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "ddc6aad0950d4629a6341e9ec1e3f21716067895f8826974cd2c2947b635e41b",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.13.15+20260807-riscv64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.13.15+20260807",
+              "python_version": "3.13",
+              "architecture": "riscv64",
+              "control": "@@//python:control"
+            }
+          },
+          "python314_amd64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "3d1705fee7747c491d774e26fa91fad67e25d1eb3ede4124dc88501279f2e7d4",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.14.7+20260807-x86_64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.14.7+20260807",
+              "python_version": "3.14",
+              "architecture": "amd64",
+              "control": "@@//python:control"
+            }
+          },
+          "python314_arm64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "3657f14592d0a9c3f459ded52bf6f38976698cb07365e4025684bb11dd6be1cb",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.14.7+20260807-aarch64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.14.7+20260807",
+              "python_version": "3.14",
+              "architecture": "arm64",
+              "control": "@@//python:control"
+            }
+          },
+          "python314_s390x": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "6891a60cbdd14e49da744615202430625baa65b3bc173dc00ebdc925820cf4d2",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.14.7+20260807-s390x-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.14.7+20260807",
+              "python_version": "3.14",
+              "architecture": "s390x",
+              "control": "@@//python:control"
+            }
+          },
+          "python314_riscv64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "4122e5a57b04c09aabd2acc1dc4850c29380479e7202ac6f6538f60bfa4a4176",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.14.7+20260807-riscv64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.14.7+20260807",
+              "python_version": "3.14",
+              "architecture": "riscv64",
+              "control": "@@//python:control"
+            }
+          },
+          "python315rc1_amd64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "6c4d2bf1ef2972203e9da61402a3c1f95a259c023ed154802f91317f963f5e1a",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-x86_64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.15.0rc1+20260807",
+              "python_version": "3.15",
+              "architecture": "amd64",
+              "control": "@@//python:control"
+            }
+          },
+          "python315rc1_arm64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "fcf6064714daf0c67cae217d467353d06b0d32aa36fdb349d8323b87fe4713ac",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-aarch64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.15.0rc1+20260807",
+              "python_version": "3.15",
+              "architecture": "arm64",
+              "control": "@@//python:control"
+            }
+          },
+          "python315rc1_s390x": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "92cb7d88526294a622a96668931365a9336577077e3fcd7fec7cb6118752b4cc",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-s390x-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.15.0rc1+20260807",
+              "python_version": "3.15",
+              "architecture": "s390x",
+              "control": "@@//python:control"
+            }
+          },
+          "python315rc1_riscv64": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_archive",
+            "attributes": {
+              "sha256": "ff37ca1332e98eac422ffb8f3b4fd9ef89ef26b426656189849922cfeaf20dbd",
+              "strip_prefix": "python/",
+              "urls": [
+                "https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-riscv64-unknown-linux-gnu-install_only.tar.gz"
+              ],
+              "version": "3.15.0rc1+20260807",
+              "python_version": "3.15",
+              "architecture": "riscv64",
+              "control": "@@//python:control"
+            }
+          },
+          "python_versions": {
+            "bzlFile": "@@//private/extensions:python.bzl",
+            "ruleClassName": "python_versions_repo",
+            "attributes": {
+              "versions": {
+                "3.13_amd64": "3.13.15",
+                "3.13_arm64": "3.13.15",
+                "3.13_s390x": "3.13.15",
+                "3.13_riscv64": "3.13.15",
+                "3.14_amd64": "3.14.7",
+                "3.14_arm64": "3.14.7",
+                "3.14_s390x": "3.14.7",
+                "3.14_riscv64": "3.14.7",
+                "3.15rc1_amd64": "3.15.0rc1",
+                "3.15rc1_arm64": "3.15.0rc1",
+                "3.15rc1_s390x": "3.15.0rc1",
+                "3.15rc1_riscv64": "3.15.0rc1"
+              }
+            }
+          }
+        },
+        "moduleExtensionMetadata": {
+          "explicitRootModuleDirectDeps": [
+            "python_versions",
+            "python313_amd64",
+            "python313_arm64",
+            "python313_s390x",
+            "python313_riscv64",
+            "python314_amd64",
+            "python314_arm64",
+            "python314_s390x",
+            "python314_riscv64",
+            "python315rc1_amd64",
+            "python315rc1_arm64",
+            "python315rc1_s390x",
+            "python315rc1_riscv64"
+          ],
+          "explicitRootModuleDirectDevDeps": [],
+          "useAllRepos": "NO",
+          "reproducible": false
+        },
+        "recordedRepoMappingEntries": []
+      }
+    },
     "//private/extensions:version.bzl%version": {
       "general": {
         "bzlTransitiveDigest": "a4FYxHYUQ822kcAcKD5tzEjksar43fkO3cC2oeyx6zA=",
