@@ -37,7 +37,7 @@ def _example_tar():
     tar(
         name = "example",
         extension = "tar.gz",
-        srcs = ["testdata/example_all_modules.py"],
+        srcs = ["testdata/stdlib_check.py"],
     )
 
 def python_image(distro, major_version, arch, packages):

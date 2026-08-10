@@ -1,6 +1,6 @@
 schemaVersion: "2.0.0"
 commandTests:
-  - name: example_all_modules
+  - name: stdlib_check
     command: "/python/bin/python3"
-    args: ["/example_all_modules.py"]
+    args: ["/stdlib_check.py"]
     expectedOutput: ["ALL GOOD"]
