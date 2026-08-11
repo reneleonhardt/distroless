@@ -8,9 +8,8 @@ prebuilt tarball instead of the Debian python package.
 
 Supported versions (matching the official CPython support windows):
 
-- Python 3.13 (`python3.13-debian12` / `python3.13-debian13`)
-- Python 3.14 (`python3.14-debian12` / `python3.14-debian13`)
-- Python 3.15.0rc1 (`python3.15rc1-debian12` / `python3.15rc1-debian13`)
+- Python 3.13 (`python3.13-debian13`)
+- Python 3.14 (`python3.14-debian13`)
 
 Each image contains everything in the [base image](../base/README.md),
 plus a standalone CPython install under `/python`:
@@ -55,5 +54,6 @@ paths or an explicit `ctypes.CDLL("/lib/.../libX.so.Y")` instead.
 ## Provenance
 
 Python comes from python-build-standalone release `20260807`
-(`cpython-3.13.15 / 3.14.7 / 3.15.0rc1 +20260807-{x86_64,aarch64,s390x,riscv64}-unknown-linux-gnu-install_only.tar.gz`),
-pinned in `//private/extensions:python.bzl`.
+(`cpython-3.13.15 / 3.14.7 +20260807-{x86_64,aarch64,s390x,riscv64}-unknown-linux-gnu-install_only.tar.gz`),
+pinned in `//private/extensions:python.bzl`. Update via `knife update-python-archives`
+(see `scripts/update_python_archives.sh`).

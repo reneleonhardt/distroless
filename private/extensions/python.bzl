@@ -128,6 +128,7 @@ def _python_impl(module_ctx):
 
     # Python from python-build-standalone (https://github.com/astral-sh/python-build-standalone)
     # Release 20260807. Linux targets only (distroless images).
+    # Versions 3.13, 3.14 (3.15 added when it reaches a stable release).
     # NOTE: armv7 is intentionally absent: PBS publishes soft-float gnueabi builds
     # (interpreter /lib/ld-linux.so.3) which cannot run on the distroless armhf base
     # (loader /usr/lib/ld-linux-armhf.so.3); ppc64le is not published by PBS.
@@ -219,50 +220,6 @@ def _python_impl(module_ctx):
         control = "//python:control",
     )
 
-    python_archive(
-        name = "python315rc1_amd64",
-        sha256 = "6c4d2bf1ef2972203e9da61402a3c1f95a259c023ed154802f91317f963f5e1a",
-        strip_prefix = "python/",
-        urls = ["https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-x86_64-unknown-linux-gnu-install_only.tar.gz"],
-        version = "3.15.0rc1+20260807",
-        python_version = "3.15",
-        architecture = "amd64",
-        control = "//python:control",
-    )
-
-    python_archive(
-        name = "python315rc1_arm64",
-        sha256 = "fcf6064714daf0c67cae217d467353d06b0d32aa36fdb349d8323b87fe4713ac",
-        strip_prefix = "python/",
-        urls = ["https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-aarch64-unknown-linux-gnu-install_only.tar.gz"],
-        version = "3.15.0rc1+20260807",
-        python_version = "3.15",
-        architecture = "arm64",
-        control = "//python:control",
-    )
-
-    python_archive(
-        name = "python315rc1_s390x",
-        sha256 = "92cb7d88526294a622a96668931365a9336577077e3fcd7fec7cb6118752b4cc",
-        strip_prefix = "python/",
-        urls = ["https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-s390x-unknown-linux-gnu-install_only.tar.gz"],
-        version = "3.15.0rc1+20260807",
-        python_version = "3.15",
-        architecture = "s390x",
-        control = "//python:control",
-    )
-
-    python_archive(
-        name = "python315rc1_riscv64",
-        sha256 = "ff37ca1332e98eac422ffb8f3b4fd9ef89ef26b426656189849922cfeaf20dbd",
-        strip_prefix = "python/",
-        urls = ["https://github.com/astral-sh/python-build-standalone/releases/download/20260807/cpython-3.15.0rc1+20260807-riscv64-unknown-linux-gnu-install_only.tar.gz"],
-        version = "3.15.0rc1+20260807",
-        python_version = "3.15",
-        architecture = "riscv64",
-        control = "//python:control",
-    )
-
     python_versions_repo(
         name = "python_versions",
         versions = {
@@ -274,10 +231,6 @@ def _python_impl(module_ctx):
             "3.14_arm64": "3.14.7",
             "3.14_s390x": "3.14.7",
             "3.14_riscv64": "3.14.7",
-            "3.15rc1_amd64": "3.15.0rc1",
-            "3.15rc1_arm64": "3.15.0rc1",
-            "3.15rc1_s390x": "3.15.0rc1",
-            "3.15rc1_riscv64": "3.15.0rc1",
         },
     )
 
@@ -292,10 +245,6 @@ def _python_impl(module_ctx):
             "python314_arm64",
             "python314_s390x",
             "python314_riscv64",
-            "python315rc1_amd64",
-            "python315rc1_arm64",
-            "python315rc1_s390x",
-            "python315rc1_riscv64",
         ],
         root_module_direct_dev_deps = [],
     )
