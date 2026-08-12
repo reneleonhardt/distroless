@@ -56,4 +56,4 @@ paths or an explicit `ctypes.CDLL("/lib/.../libX.so.Y")` instead.
 Python comes from python-build-standalone release `20260807`
 (`cpython-3.13.15 / 3.14.7 +20260807-{x86_64,aarch64,s390x,riscv64}-unknown-linux-gnu-install_only.tar.gz`),
 pinned in `//private/extensions:python.bzl`. Update via `knife update-python-archives`
-(see `scripts/update_python_archives.sh`).
+(see `knife.d/update_python_archives.sh`).

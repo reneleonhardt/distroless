@@ -582,7 +582,7 @@
     },
     "//private/extensions:python.bzl%python": {
       "general": {
-        "bzlTransitiveDigest": "6I46z3hVfX/PEqrGhYqj7d5fVGpnF0On5NmcQMP66XY=",
+        "bzlTransitiveDigest": "D0bCdCKapFzAKG3sW9Lxf0qv+KeV/gJaZx0aSfufP5A=",
         "usagesDigest": "tG689EIwVPWG0ZSvYu3XHygIO8sACWdZ24C/r1Ck6Ng=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},

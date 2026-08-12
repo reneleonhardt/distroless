@@ -128,7 +128,7 @@ def _python_impl(module_ctx):
 
     # Python from python-build-standalone (https://github.com/astral-sh/python-build-standalone)
     # Release 20260807. Linux targets only (distroless images).
-    # Versions 3.13, 3.14 (3.15 added when it reaches a stable release).
+    # Versions 3.13, 3.14 (new minors added by update-python-archives when stable).
     # NOTE: armv7 is intentionally absent: PBS publishes soft-float gnueabi builds
     # (interpreter /lib/ld-linux.so.3) which cannot run on the distroless armhf base
     # (loader /usr/lib/ld-linux-armhf.so.3); ppc64le is not published by PBS.

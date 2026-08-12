@@ -3,6 +3,17 @@ load(":python.bzl", "python_image", "python_image_index")
 
 package(default_visibility = ["//visibility:public"])
 
+sh_test(
+    name = "update_python_archives_test",
+    srcs = ["update_python_archives_test.sh"],
+    data = [
+        ":config.bzl",
+        "//:MODULE.bazel",
+        "//knife.d:update_python_archives.sh",
+        "//private/extensions:python.bzl",
+    ],
+)
+
 [
     python_image(
         arch = arch,
